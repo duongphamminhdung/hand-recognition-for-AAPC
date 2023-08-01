@@ -7,7 +7,7 @@ import cv2
 
 MARGIN = 10  # pixels
 FONT_SIZE = 1
-FONT_THICKNESS = 1
+FONT_THICKNESS = 2
 HANDEDNESS_TEXT_COLOR = (88, 205, 54) # vibrant green
 
 def draw_landmarks_on_image(rgb_image, detection_result):
