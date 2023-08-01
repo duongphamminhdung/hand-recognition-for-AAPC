@@ -11,15 +11,15 @@ options = vision.HandLandmarkerOptions(base_options=base_options,
 detector = vision.HandLandmarker.create_from_options(options)  
 
 while(True):
-    ret, frame = vid.read()
+    ret, frame = vid.read(cv2.CAP_V4L2)
     cv2.imwrite('frame.jpg', frame)
-    image = mp.Image.create_from_file('frame.jpg'))
+    image = mp.Image.create_from_file('frame.jpg')
     detection_result = detector.detect(image)
 
     # STEP 5: Process the classification result. In this case, visualize it.
     annotated_image = draw_landmarks_on_image(image.numpy_view(), detection_result)
     cv2.imshow('im', cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR))
-    
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
   
