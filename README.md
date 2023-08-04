@@ -1,6 +1,6 @@
 # hand-recognition-for-AAPC
 
-# Repo này phục vụ cho trò dino trong clubfair ams 2023 nhé
+Repo này phục vụ cho trò dino trong clubfair ams 2023 nhé
 # Các bước để chạy:
 
 B1. clone repo về (hãy chắc chắn anaconda chạy được trên máy)
